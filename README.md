@@ -8,13 +8,13 @@ This python module is built on the non-iterative approach to compute the phase a
 ```
 All the attributes can be used to enfore Dirichlet boundary conditions (in numerical simulations) and compute end-member ($\mathrm{CO_2}$ saturated vs unsaturated) quantities.
 
-**Applicability Range**
+**applicability range**
 
-Pressure and temperature range : 
+pressure and temperature range : 
 ```
 P <= 1000 bar (100 MPa); T<=623.15 degree K (350 degree C)
 ```
-Salinity components and molality ranges: 
+salinity components and molality ranges: 
 ```
 K2SO4 <= 1.5 mol/kg
 MgSO4 <= 3.3 mol/kg
@@ -23,8 +23,15 @@ KCl <= 6.0 mol/kg
 MgCl2 <= 2.0 mol/kg
 CaCl2 <= 5.0 mol/kg
 ```
-**Dependencies**
+**dependencies**
 ```
 - python 2.0 or higher
 - numpy
 ```
+
+**installation**
+
+**documentation**
+
+**references**
+* John
