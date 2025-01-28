@@ -23,3 +23,8 @@ KCl <= 6.0 mol/kg
 MgCl2 <= 2.0 mol/kg
 CaCl2 <= 5.0 mol/kg
 ```
+**Dependencies**
+```
+- python 2.0 or higher
+- numpy
+```
