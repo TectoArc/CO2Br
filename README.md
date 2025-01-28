@@ -30,8 +30,19 @@ CaCl2 <= 5.0 mol/kg
 ```
 
 **installation**
-
+It can either be download from PyPI:
+```
+pip install CO2Br==1.0
+```
+or directly from github:
+```
+pip install git+https://github.com/TectoArc/CO2Br.git
+```
 **documentation**
+\color{Aqua}
+```
+import numpy as np
+```
 
 **references**
 * D. J. Bradley and K. S. Pitzer (1979). Thermodynamics of Electrolytes. 12. Dielectric Properties of Water and Debye-Hiickel Parameters to 350 $^°\mathrm{C}$ and 1 kbar. Journal of Physical Chemistry, American Chemical Society.
