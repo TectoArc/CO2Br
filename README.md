@@ -39,8 +39,8 @@ or directly from github:
 pip install git+https://github.com/TectoArc/CO2Br.git
 ```
 **documentation**
-\color{Aqua}
 ```
+\color{Aqua}
 import numpy as np
 ```
 
