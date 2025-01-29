@@ -1,5 +1,8 @@
+# import sys, os
+# sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import numpy as np
-from .solubility import SpeciesInfo
+from co2br.solubility import SpeciesInfo
 
 def _iapws97(P, T): # P:MPa; T:K
     T = T
@@ -54,7 +57,7 @@ def _volumetricDHlimitingslope(P, T): # P:bars; T:K
 def lineardensitymodel(rs, rw, c, cs):
     return rw + (rs-rw)*c/cs
 
-class Denisty:
+class Density:
     def __init__(self, P, T):
         # constants
         self.P = P*10; self.T = T+273.15 # pressure in bars; temperature in Kelvin

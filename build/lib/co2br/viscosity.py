@@ -1,6 +1,8 @@
+# import sys, os
+# sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import numpy as np
-from .solubility import SpeciesInfo
-from .pvtx import Density
+from co2br.solubility import SpeciesInfo
 
 class SolutionViscosity:
     def __init__(self, T, m):
@@ -68,4 +70,3 @@ class SolutionViscosity:
     def MixtureViscosityModel(self, mu_d, mu_r, c_norm):
         R = np.log(mu_d/mu_r)
         return np.exp(-R*(1-c_norm))
-
