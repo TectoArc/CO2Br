@@ -54,7 +54,7 @@ def _volumetricDHlimitingslope(P, T): # P:bars; T:K
 def lineardensitymodel(rs, rw, c, cs):
     return rw + (rs-rw)*c/cs
 
-class BinarySulphate:
+class Denisty:
     def __init__(self, P, T):
         # constants
         self.P = P*10; self.T = T+273.15 # pressure in bars; temperature in Kelvin

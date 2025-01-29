@@ -1,6 +1,6 @@
 import numpy as np
 from solubility import SpeciesInfo, Solubility
-from pvtx import BinarySulphate
+from pvtx import Density
 
 class SolutionViscosity:
     def __init__(self, T, m):
@@ -69,18 +69,3 @@ class SolutionViscosity:
         R = np.log(mu_d/mu_r)
         return np.exp(-R*(1-c_norm))
 
-if __name__ == "__main__":
-    m = {"NaCl":1.0, 
-        "KCl": 0.0, 
-        "MgSO4": 0, 
-        "MgCl2": 0.0}
-    
-    T = 30
-    P = np.ones([5, 5]) * 50
-
-    mco2 = Solubility(P, T).CO2Solubility(m)
-    d = BinarySulphate(P, T)
-    r_co2br, r_br, rw = d.BrineDensity(m, mco2)
-
-    s = SolutionViscosity(T, m)
-    print(s.Co2BrineViscosity(rw, 1.14))
