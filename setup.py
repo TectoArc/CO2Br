@@ -7,7 +7,7 @@ with open(os.path.join(dir, "README.md"), encoding='utf-8') as f:
 
 setup(
     name = 'CO2Br',
-    version = '1.0',
+    version = '0.1',
     packages = find_packages(),
     author = "Sayan Sen",
     long_description=long_desc,
