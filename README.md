@@ -40,7 +40,18 @@ pip install git+https://github.com/TectoArc/CO2Br.git
 ```
 **documentation**
 ```
-https://github.com/TectoArc/CO2Br/blob/6019a87e458170d05cf04b5d6484121804cf49b7/src/viscosity.py#L73-L86
+m = {"NaCl":1.0, 
+        "KCl": 0.0, 
+        "MgSO4": 0, 
+        "MgCl2": 0.0}
+T = 30
+P = np.ones([10, 10]) * 50
+
+mco2 = Solubility(P, T).CO2Solubility(m)
+d = Density(P, T)
+r_co2br, r_br, rw = d.BrineDensity(m, mco2)
+s = SolutionViscosity(T, m)
+mu_co2br = s.Co2BrineViscosity(rw, mco2)
 ```
 **references**
 * D. J. Bradley and K. S. Pitzer (1979). Thermodynamics of Electrolytes. 12. Dielectric Properties of Water and Debye-Hiickel Parameters to 350 $^°\mathrm{C}$ and 1 kbar. Journal of Physical Chemistry, American Chemical Society.
