@@ -1,6 +1,6 @@
 import numpy as np
-from solubility import SpeciesInfo, Solubility
-from pvtx import Density
+from CO2Br.src.solubility import SpeciesInfo
+from CO2Br.src.pvtx import Density
 
 class SolutionViscosity:
     def __init__(self, T, m):

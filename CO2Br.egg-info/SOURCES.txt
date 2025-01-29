@@ -1,0 +1,11 @@
+README.md
+setup.py
+CO2Br/__init__.py
+CO2Br.egg-info/PKG-INFO
+CO2Br.egg-info/SOURCES.txt
+CO2Br.egg-info/dependency_links.txt
+CO2Br.egg-info/top_level.txt
+CO2Br/src/__init__.py
+CO2Br/src/pvtx.py
+CO2Br/src/solubility.py
+CO2Br/src/viscosity.py

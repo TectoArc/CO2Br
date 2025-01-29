@@ -1,5 +1,5 @@
 import numpy as np
-from solubility import SpeciesInfo
+from .solubility import SpeciesInfo
 
 def _iapws97(P, T): # P:MPa; T:K
     T = T
