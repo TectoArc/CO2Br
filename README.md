@@ -39,9 +39,7 @@ or directly from github:
 pip install git+https://github.com/TectoArc/CO2Br.git
 ```
 **documentation**
-```
-https://github.com/TectoArc/CO2Br/blob/19343fd37d04b1345b74ebd74fab2ef48be3252f/src/viscosity.py#L73-L86
-```
+https://github.com/TectoArc/CO2Br/blob/6019a87e458170d05cf04b5d6484121804cf49b7/src/viscosity.py#L73-L86
 **references**
 * D. J. Bradley and K. S. Pitzer (1979). Thermodynamics of Electrolytes. 12. Dielectric Properties of Water and Debye-Hiickel Parameters to 350 $^°\mathrm{C}$ and 1 kbar. Journal of Physical Chemistry, American Chemical Society.
 * S. Mao and Z. Duan (2008). The *P,V,T,x* properties of binary aqueous chloride solutions up to T = 573 K and 100 MPa, Journal of Chemical Thermodynamics, Elsevier, doi: 10.1016/j.jct.2008.03.005.
