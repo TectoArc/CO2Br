@@ -32,7 +32,7 @@ CaCl2 <= 5.0 mol/kg
 **installation**
 It can either be download from PyPI:
 ```
-pip install CO2Br==1.0
+pip install CO2Br==0.1
 ```
 or directly from github:
 ```
